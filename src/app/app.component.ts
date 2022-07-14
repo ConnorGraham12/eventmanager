@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormioResources } from '@formio/angular/resource';
-import { FormioAuthService } from '@formio/angular/auth';
+import { CustomAuthComponent } from './auth/src/custom-auth/custom-auth.component';
+import { CustomFormioResourceService } from './auth/src/custom-formio-resource.service';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +11,9 @@ import { FormioAuthService } from '@formio/angular/auth';
 export class AppComponent {
   title = 'eventmanager';
   constructor(
-    public auth: FormioAuthService,
+    public auth: CustomAuthComponent,
     private router: Router,
-    public resources: FormioResources
+    public resources: CustomFormioResourceService
   ) {
     this.auth.onLogin.subscribe(() => {
       this.router.navigate(['/']);

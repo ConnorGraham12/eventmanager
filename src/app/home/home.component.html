@@ -1,4 +1,63 @@
-<div class="jumbotron">
-    <h3>Event Registration Application</h3>
-    <p>This is an example home page for the Event Registration Application</p>
+<head>
+  <title>PortalPage</title>
+  <link rel="stylesheet" type="text/css" href="\home.component.scss" />
+</head>
+<body>
+  <div class="portalPage">
+    <h1 class="portalTitle">EMPLOYEE PORTAL</h1>
+    <h3 class="portalSubtitle">Form Library</h3>
+    <img class="portalImg" src="https://1000logos.net/wp-content/uploads/2017/11/Color-University-Central-Florida-Logo.jpg" width="230" height="160" />
+
+
+    <div class="navbar">
+      <a routerLink="#">Form Library</a>
+      <a routerLink="#">My Inbox</a>
+      <a routerLink="#">My History - Reporting</a>
+      <a routerLink="#">My Documents</a>
+    </div>
+
+    <div class= "columns">
+
+      <div class="div1">
+        <div class="payrollPersonnelForms">
+          <h2>Payroll/Personnel Forms</h2>
+          <a routerLink="/directDepositUpdate">Direct Deposit Update</a>
+          <a routerLink="/demographic">Demographic Change</a>
+          <p>(Name/Address/Phone)</p>
+          <a routerLink="#">State Income Tax Withholding (G-4)</a>
+          <a routerLink="#">Federal Income Tax Withholding (W-4)</a>
+          <a routerLink="#">Update Emergency Contact Info</a>
+        </div>
+
+        <div class="div2">
+          <h2 class="secondaryHeader">Professional Leave</h2>
+          <a routerLink="#">Proffesional Leave Request</a>
+        </div>
+
+        <div class="div3">
+          <h2 class="secondaryHeader">Field Trips</h2>
+          <a routerLink="#">Field Trip Request</a>
+        </div>
+
+        <div class="div4">
+          <h2>New Hire Forms</h2>
+          <p class="newHireRedText">(1-6 REQUIRED)</p>
+          <p class="newHireInstructions">New Hire Instructions</p>
+          <a routerLink="#">1 - Employment Eligibility I-9 Form</a>
+          <a routerLink="#">2 - Federal Income Tax Withholding (W-4)</a>
+          <a routerLink="#">3 - State Income Tax Withholding (G-4)</a>
+          <a routerLink="#">4 - Emergency Contact Form</a>
+          <a routerLink="#">5 - Race/Ethnicity Questionnaire</a>
+          <a routerLink="#">6 - Handbook Acknowledgement</a>
+          <a routerLink="#">7 - Direct Deposit Signup</a>
+        </div>
+      </div>
+
+      <div class="portalFooter">
+        <footer>
+          <p>210 SOUTH COLLEGE ST | METTER, GA 30439 | P: (912) 685-5713</p>
+        </footer>
+      </div>
+    </div>
   </div>
+</body>
